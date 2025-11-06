@@ -1,6 +1,6 @@
 # ⚛️ Vira: Şefkatli Yapay Zeka Yoldaşınız
 
-[Vira Arayüz Görüntüsü](httpsVira_Ekran_Goruntusu.png) Vira, kullanıcılara duygusal destek sağlamak, onlarla empatik bir şekilde sohbet etmek ve zihinsel sağlık egzersizleri sunmak için tasarlanmış, Gemini API tarafından desteklenen bir yapay zeka sohbet robotudur.
+Vira, kullanıcılara duygusal destek sağlamak, onlarla empatik bir şekilde sohbet etmek ve zihinsel sağlık egzersizleri sunmak için tasarlanmış, Gemini API tarafından desteklenen bir yapay zeka sohbet robotudur.
 
 Bu proje, React, TypeScript ve Tailwind CSS kullanılarak modern bir web uygulaması olarak geliştirilmiştir.
 
