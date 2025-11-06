@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# ⚛️ Vira: Şefkatli Yapay Zeka Yoldaşınız
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Vira Arayüz Görüntüsü](httpsVira_Ekran_Goruntusu.png) Vira, kullanıcılara duygusal destek sağlamak, onlarla empatik bir şekilde sohbet etmek ve zihinsel sağlık egzersizleri sunmak için tasarlanmış, Gemini API tarafından desteklenen bir yapay zeka sohbet robotudur.
 
-Currently, two official plugins are available:
+Bu proje, React, TypeScript ve Tailwind CSS kullanılarak modern bir web uygulaması olarak geliştirilmiştir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Temel Özellikler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Empatik Sohbet:** Google Gemini modeli sayesinde akıcı ve anlayışlı bir sohbet deneyimi.
+* **Kişiselleştirme:** Kullanıcılar, sohbet deneyimini kişiselleştirmek için isim, yaş, ruh hali ve terapi hedefleri gibi bilgileri içeren bir profil oluşturabilir.
+* **Profil Kaydı:** Profil bilgileri, tarayıcınızın `localStorage` (yerel depolama) alanında güvenle saklanır.
+* **Yapay Zeka Destekli Araçlar:** Vira, kullanıcının ruh haline göre **nefes egzersizleri**, **meditasyonlar** veya **günlük tutma önerileri** gibi yardımcı araçlar sunabilir.
+* **Modern Arayüz:** Tailwind CSS ile oluşturulmuş şık, duyarlı ve karanlık mod öncelikli bir tasarım.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Kullanılan Teknolojiler
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **Frontend:** React (Vite ile)
+* **Dil:** TypeScript
+* **Stil (Styling):** Tailwind CSS
+* **Yapay Zeka (AI):** Google Gemini API (`@google/genai`)
+* **Markdown:** `react-markdown` (Yapay zeka yanıtlarını formatlamak için)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Projeyi Yerel (Lokal) Olarak Çalıştırma
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Bu projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Projeyi Klonlayın
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+git clone [https://github.com/SENIN-KULLANICI-ADIN/vira-chatbot.git](https://github.com/SENIN-KULLANICI-ADIN/vira-chatbot.git)
+cd vira-chatbot
+
+## 2. Gerekli Paketleri Yükleyin
+
+Proje klasöründeyken terminalde aşağıdaki komutu çalıştırın:
+
+Bash
+npm install
+
+## 3. API Anahtarını Ayarlayın (Çok Önemli!)
+
+Bu proje, çalışmak için bir Google Gemini API anahtarına ihtiyaç duyar.
+
+Projenin ana klasöründe (.gitignore dosyasının olduğu yerde) .env adında yeni bir dosya oluşturun.
+
+Google AI Studio'dan aldığınız API anahtarınızı bu dosyaya aşağıdaki formatta ekleyin:
+
+Plaintext
+VITE_GEMINI_API_KEY="AIzaSy...ANAHTARINIZIN_TAMAMI_BURAYA"
+
+## 4. Projeyi Başlatın
+
+Tüm kurulumlar tamamlandığında, projeyi geliştirme modunda başlatmak için aşağıdaki komutu çalıştırın:
+
+Bash
+npm run dev
+Uygulamanız varsayılan olarak http://localhost:5173/ adresinde çalışmaya başlayacaktır.
+
+by vira..
