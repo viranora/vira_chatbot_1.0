@@ -32,7 +32,7 @@ Bu projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımlar�
 
 ### 1. Projeyi Klonlayın
 
-git clone [https://github.com/SENIN-KULLANICI-ADIN/vira-chatbot.git](https://github.com/SENIN-KULLANICI-ADIN/vira-chatbot.git)
+git clone [https://github.com/viranora/vira-chatbot.git](https://github.com/viranora/vira-chatbot.git)
 cd vira-chatbot
 
 ## 2. Gerekli Paketleri Yükleyin
